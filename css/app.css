@@ -358,8 +358,18 @@ body {
 }
 
 #mifoto {
-  width: 500px;
-  height: 500px;
-  border-radius: 50px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 50px;
   
 }
+@media (max-width: 767px) {
+    #contenedor-img {
+      flex-wrap: wrap;
+    }
+    
+    #mifoto {
+      margin-bottom: 20px;
+    }
+  }
